@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:'header header'
+                        'aside  main'
+                        'footer footer';
+}
+
+header {
+    min-height: 100px;
+    grid-area: header;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside {width: fit-content;
+    grid-area: aside;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.caja__deControl {
+    display: flex;
+    
+}
+
+.botones {
+    margin: 50% 10%;
+}
+
+.botones button {
+    margin: 0 0 5px 0;
+}
+
+.btn__jugar, .btn__duplicar, .btn__deshacer, .btn__tirar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: grey;
+    font-size: 1em;
+}
+
+.monedas {
+    margin: 50% 10%;
+}
+
+.monedas div {
+    margin-bottom: 5px;
+}
+
+.monedas div:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.valor__1, .valor__5, .valor__10, .valor__20, .valor__50, .valor__100 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 187, 0, 0.835);
+}
+
+main {
+    text-align: center;
+    grid-area: main;
+}
+
+.panio__ruleta {
+    margin: auto;
+    background-color: green;
+    width: 350px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-areas:'num__0     num__0     num__0'
+                        'num__01    num__02    num__03'
+                        'num__04    num__05    num__06'
+                        'num__07    num__08    num__09'
+                        'num__10    num__11    num__12'
+                        'num__13    num__14    num__15'
+                        'num__16    num__17    num__18'
+                        'num__19    num__20    num__21'
+                        'num__22    num__23    num__24'
+                        'num__25    num__26    num__27'
+                        'num__28    num__29    num__30'
+                        'num__31    num__32    num__33'
+                        'num__34    num__35    num__36'
+                        'columna__1 columna__2 columna__3';
+}
+
+.panio__ruleta div:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.num__00, .num__01, .num__02, .num__03, .num__04, .num__05, .num__06, .num__07, .num__08, .num__09, .num__10, .num__11, .num__12, .num__13, .num__14, .num__15, .num__16, .num__17, .num__18, .num__19, .num__20, .num__21, .num__22, .num__23, .num__24, .num__25, .num__26, .num__27, .num__28, .num__29, .num__30, .num__31, .num__32, .num__33, .num__34, .num__35, .num__36, .columna__1, .columna__2, .columna__3, .colores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+
+}
+
+.num__00{
+    height: 2em;
+    grid-area: num__0;
+    text-align: center;
+    border: 2px solid black;
+}
+.num__01{
+    grid-area: num__01;
+    background-color: red;
+}
+.num__02{
+    grid-area: num__02;
+    background-color: black;
+}
+.num__03{
+    grid-area: num__03;
+    background-color: red;
+
+}
+.num__04{
+    grid-area: num__04;
+    background-color: black;
+
+}
+.num__05{
+    grid-area: num__05;
+    background-color: red;
+
+}
+.num__06{
+    grid-area: num__06;
+    background-color: black;
+
+}
+.num__07{
+    grid-area: num__07;
+    background-color: red;
+
+}
+.num__08{
+    grid-area: num__08;
+    background-color: black;
+
+}
+.num__09{
+    grid-area: num__09;
+    background-color: red;
+
+}
+.num__10{
+    grid-area: num__10;
+    background-color: black;
+
+}
+.num__11{
+    grid-area: num__11;
+    background-color: red;
+
+}
+.num__12{
+    grid-area: num__12;
+    background-color: black;
+
+}
+.num__13{
+    grid-area: num__13;
+    background-color: red;
+
+}
+.num__14{
+    grid-area: num__14;
+    background-color: black;
+
+}
+.num__15{
+    grid-area: num__15;
+    background-color: red;
+
+}
+.num__16{
+    grid-area: num__16;
+    background-color: black;
+
+}
+.num__17{
+    grid-area: num__17;
+    background-color: red;
+
+}
+.num__18{
+    grid-area: num__18;
+    background-color: black;
+
+}
+.num__19{
+    grid-area: num__19;
+    background-color: red;
+
+}
+.num__20{
+    grid-area: num__20;
+    background-color: black;
+
+}
+.num__21{
+    grid-area: num__21;
+    background-color: red;
+
+}
+.num__22{
+    grid-area: num__22;
+    background-color: black;
+
+}
+.num__23{
+    grid-area: num__23;
+    background-color: red;
+
+}
+.num__24{
+    grid-area: num__24;
+    background-color: black;
+
+}
+.num__25{
+    grid-area: num__25;
+    background-color: red;
+
+}
+.num__26{
+    grid-area: num__26;
+    background-color: black;
+
+}
+.num__27{
+    grid-area: num__27;
+    background-color: red;
+
+}
+.num__28{
+    grid-area: num__28;
+    background-color: black;
+
+}
+.num__29{
+    grid-area: num__29;
+    background-color: red;
+
+}
+.num__30{
+    grid-area: num__30;
+    background-color: black;
+
+}
+.num__31{
+    grid-area: num__31;
+    background-color: red;
+
+}
+.num__32{
+    grid-area: num__32;
+    background-color: black;
+
+}
+.num__33{
+    grid-area: num__33;
+    background-color: red;
+
+}
+.num__34{
+    grid-area: num__34;
+    background-color: black;
+
+}
+.num__35{
+    grid-area: num__35;
+    background-color: red;
+
+}
+.num__36{
+    grid-area: num__36;
+    background-color: black;
+    
+}
+
+.columna__1{
+    grid-area: columna__1;
+
+}
+.columna__2{
+    grid-area: columna__2;
+
+}
+.columna__3{
+    grid-area: columna__3;
+}
+
+.colores{
+    grid-area: colores;
+    display: flex;
+}
+
+.color__rojo{
+    width: 175px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    grid-area: color__rojo;
+}
+.color__negro{
+    width: 175px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    grid-area: color__negro;
+}
+
+
+
+footer {
+    min-height: 100px;
+    grid-area: footer;
+    background-color: blueviolet
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor {
+        display: block;
+    }
+    header {
+        display: block;
+    }
+    .caja__deControl {
+        display: block;
+    }
+    
+    aside {
+        width: 100%;
+    }
+}
