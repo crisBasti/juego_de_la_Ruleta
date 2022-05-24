@@ -352,11 +352,26 @@ footer {
     header {
         display: block;
     }
+
+    aside {
+        width: 100%;
+    }
+
     .caja__deControl {
         display: block;
     }
     
-    aside {
-        width: 100%;
+    .botones {
+        margin: 10px 20%;
+    }
+
+    .btn__jugar, .btn__duplicar, .btn__deshacer, .btn__tirar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .monedas {
+        display: flex;
+        margin: 0 15%;
     }
 }
