@@ -362,7 +362,11 @@ footer {
     }
     
     .botones {
-        margin: 10px 20%;
+        margin: 10px 8%;
+    }
+
+    .botones button {
+        margin: 0;
     }
 
     .btn__jugar, .btn__duplicar, .btn__deshacer, .btn__tirar {
@@ -373,5 +377,11 @@ footer {
     .monedas {
         display: flex;
         margin: 0 15%;
+        
+    }
+
+    .valor__1, .valor__5, .valor__10, .valor__20, .valor__50, .valor__100 {
+        width: 50px;
+        height: 40px;
     }
 }
