@@ -9,8 +9,13 @@ console.log(generadorRandom(0,36));
 
 }
 
+let bolilla = document.querySelector('.bolilla');
+
+
+
 let btnTirar = document.querySelector('.btn__jugar');
 btnTirar.addEventListener('click', () => {
     generadorRandom();
-    console.log(generadorRandom(0, 36))
+    bolilla.innerHTML = generadorRandom(0, 36);
 })
+

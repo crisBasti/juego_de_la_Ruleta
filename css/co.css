@@ -27,18 +27,18 @@ header {
 aside {width: fit-content;
     grid-area: aside;
     background-color: aquamarine;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-content: center;
 }
 
 .caja__deControl {
-    display: flex;
+    height: fit-content;
     
 }
 
 .botones {
-    margin: 50% 10%;
+    margin: 10px 14%;
 }
 
 .botones button {
@@ -46,15 +46,16 @@ aside {width: fit-content;
 }
 
 .btn__jugar, .btn__duplicar, .btn__deshacer, .btn__tirar{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: grey;
     font-size: 1em;
 }
 
 .monedas {
-    margin: 50% 10%;
+    margin: 0;
+    display: flex;
 }
 
 .monedas div {
@@ -75,6 +76,23 @@ aside {width: fit-content;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 187, 0, 0.835);
+}
+
+.bolilla {
+    width: 150px;
+    height: 170px;
+    font-size: 150px;
+    background-color: black;
+    color: aqua;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.listadeNumeros {
+    margin: 15px 100px 0;
+    font-size: 1.3em;
 }
 
 main {
