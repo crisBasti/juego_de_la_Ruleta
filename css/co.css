@@ -40,6 +40,7 @@ aside {width: fit-content;
 
 .botones {
     margin: 10px 14%;
+    user-select: none;
 }
 
 .botones button {
@@ -57,6 +58,7 @@ aside {width: fit-content;
 .monedas {
     margin: 0;
     display: flex;
+    user-select: none;
 }
 
 .monedas div {
@@ -88,12 +90,14 @@ aside {width: fit-content;
     margin: auto;
     border-radius: 50%;
     text-align: center;
+    user-select: none;
 
 }
 
 .listadeNumeros {
     margin: 15px 100px 0;
     font-size: 1.3em;
+    user-select: none;
 }
 
 main {
@@ -102,6 +106,7 @@ main {
 }
 
 .panio__ruleta {
+    user-select: none;
     margin: auto;
     background-color: green;
     width: 350px;
@@ -109,20 +114,20 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(14, 1fr);
-    grid-template-areas:'num__0     num__0     num__0'
-                        'num__01    num__02    num__03'
-                        'num__04    num__05    num__06'
-                        'num__07    num__08    num__09'
-                        'num__10    num__11    num__12'
-                        'num__13    num__14    num__15'
-                        'num__16    num__17    num__18'
-                        'num__19    num__20    num__21'
-                        'num__22    num__23    num__24'
-                        'num__25    num__26    num__27'
-                        'num__28    num__29    num__30'
-                        'num__31    num__32    num__33'
-                        'num__34    num__35    num__36'
-                        'columna__1 columna__2 columna__3';
+    grid-template-areas:'colorRojo     num__0      colorNegro'
+                        'num__01       num__02     num__03'
+                        'num__04       num__05     num__06'
+                        'num__07       num__08     num__09'
+                        'num__10       num__11     num__12'
+                        'num__13       num__14     num__15'
+                        'num__16       num__17     num__18'
+                        'num__19       num__20     num__21'
+                        'num__22       num__23     num__24'
+                        'num__25       num__26     num__27'
+                        'num__28       num__29     num__30'
+                        'num__31       num__32     num__33'
+                        'num__34       num__35     num__36'
+                        'columna__1    columna__2  columna__3';
 }
 
 .panio__ruleta div:hover {
@@ -142,7 +147,13 @@ main {
 }
 
 .colorRojo {
+    grid-area: colorRojo;
     background-color: red;
+}
+
+.colorNegro {
+    grid-area: colorNegro;
+    background-color: black;
 }
 
 
